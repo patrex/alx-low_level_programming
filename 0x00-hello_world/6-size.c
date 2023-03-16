@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *	main - prints the sizes of primitives and exits
  *
@@ -17,6 +18,5 @@ int main(void)
 	printf("Size of a long int: %ld byte(s)\n", sizeof(l));
 	printf("Size of a long long int: %ld byte(s)\n", sizeof(l2));
 	printf("Size of a float: %ld byte(s)\n", sizeof(f));
-	
 	return (0);
 }

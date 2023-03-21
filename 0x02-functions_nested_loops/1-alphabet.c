@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_alphabet - writes the character c to stdout
  *

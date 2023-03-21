@@ -19,7 +19,7 @@ int _putchar(char c)
  */
 int main(void)
 {
-	int i, n;
+	int i;
 	char c[8];
 
 	read(0, c, 8);

@@ -1,11 +1,16 @@
-#include "main.h"
-
 /**
- * main - writes the English alphabet to stdout
+ * print_alphabet - writes the character c to stdout
+ *
  * Return: On success 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int c = 'a';
+        while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
+

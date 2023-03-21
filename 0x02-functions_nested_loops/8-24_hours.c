@@ -3,28 +3,44 @@
  * jack_bauer - determines the abs value of input int
  * Return: 0 if lowercase
  */
+
+/**
+ * jack_bauer - prints time count up
+ *
+ */
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int h1, h2, m1, m2;
+	int a = 9;
 
-	for (i = '0'; i <= '2'; i++)
+	h2 = 0;
+	while (h2 <= 2)
 	{
-		for (j = '0'; j <= '3'; j++)
+		if (h2 == 2)
 		{
-			for (k = '0'; k <= '5'; k++)
-			{
-				for (l = '0'; l <= '9'; l++)
-				{
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
-				}
-
-			}
+			a = 3;
 		}
+		h1 = 0;
+		while (h1 <= a)
+		{
+			m2 = 0;
+			while (m2 <= 5)
+			{
+				m1 = 0;
+				while (m1 <= 9)
+				{
+					_putchar('0' + h2);
+					_putchar('0' + h1);
+					_putchar(':');
+					_putchar('0' + m2);
+					_putchar('0' + m1);
+					_putchar('\n');
+					m1++;
+				}
+				m2++;
+			}
+			h1++;
+		}
+		h2++;
 	}
-
 }

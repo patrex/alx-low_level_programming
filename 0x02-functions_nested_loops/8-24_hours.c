@@ -3,11 +3,6 @@
  * jack_bauer - determines the abs value of input int
  * Return: 0 if lowercase
  */
-
-/**
- * jack_bauer - prints time count up
- *
- */
 void jack_bauer(void)
 {
 	int h1, h2, m1, m2;

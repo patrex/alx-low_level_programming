@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_remaining_days - taskes a date and print how many days are
  * left in the year, taking account of leap year

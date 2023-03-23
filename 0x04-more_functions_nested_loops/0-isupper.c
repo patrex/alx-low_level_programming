@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _islower - determines if an input char is uppercase
+ * _isupper - determines if an input char is uppercase
  * @c: the character under test
- * Return: 1 if lowercase. 0 elsewhere
+ * Return: 1 if uppercase. 0 otherwise
  */
-int _islower(int c)
+int _isupper(int c)
 {
 	return ((c >= 'A' && c <= 'Z') ? 1 : 0);
 }

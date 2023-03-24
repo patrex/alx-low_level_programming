@@ -14,7 +14,7 @@ void more_numbers(void)
 		for (c = 0; c <= 14; c++)
 		{
 			last_digit = c;
-			if (c >= 0)
+			if (c >= 10)
 			{
 				_putchar('1');
 				last_digit = c % 10;

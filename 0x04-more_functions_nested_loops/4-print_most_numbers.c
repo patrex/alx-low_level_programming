@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_numbers - prints the chars 0 - 9 skipping 2 and 4
+ * print_most_numbers - prints the chars 0 - 9 skipping 2 and 4
  * Return: no value
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int c;
 

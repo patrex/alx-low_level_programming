@@ -7,18 +7,19 @@ void more_numbers(void)
 {
 	int line;
 	int c;
-	int j = '1';
-	int k;
+	int last_digit;
 
-	for (line = 0; line <= 10; line++)
+	for (line = 0; line < 10; line++)
 	{
-		for (c = '0'; c <= '9'; c++)
+		for (c = 0; c <= 14; c++)
 		{
-			_putchar(c);
-		}
-		for (k = '0'; k < '5'; k++)
-		{
-			_putchar(j + k);
+			last_digit = c;
+			if (c >= 0)
+			{
+				_putchar('1');
+				last_digit = c % 10;
+			}
+			_putchar(last_digit + '0');
 		}
 		_putchar('\n');
 	}

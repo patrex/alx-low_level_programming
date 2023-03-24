@@ -18,4 +18,6 @@ void main(void)
 		else
 			printf("%d ", number);
 	}
+
+	return (0);
 }

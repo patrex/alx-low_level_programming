@@ -10,8 +10,6 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	if (n <= 0)
-		return;
 	for (; i < n; i++)
 	{
 		printf("%d", *(a + i));
@@ -20,4 +18,5 @@ void print_array(int *a, int n)
 		_putchar(',');
 		_putchar(' ');
 	}
+	_putchar('\n');
 }

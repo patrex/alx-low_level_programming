@@ -5,9 +5,9 @@
  * @src: source string
  * Return: the pointer to dest
  */
-void _strcpy(int *dest, int *src)
+char *_strcpy(char *dest, char *src)
 {
-	while (*src++ = *dest++)
+	while ((*src++ = *dest++))
 		;
 	return (dest);
 }

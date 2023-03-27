@@ -7,10 +7,16 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	while ((*src = *dest) != '\0')
+	int count;
+
+	count = 0;
+
+	while (count >= 0)
 	{
-		dest++;
-		src++;
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
 	}
 	return (dest);
 }

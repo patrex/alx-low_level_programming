@@ -4,6 +4,7 @@
  * _strncat - concatenates two strings into one
  * @dest: - the destination string
  * @src: - the source string
+ * @n: - the limit
  * Return: the pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
@@ -34,4 +35,4 @@ char *_strncat(char *dest, char *src, int n)
 		}
 	}
 	return (dest);
-}	
+}

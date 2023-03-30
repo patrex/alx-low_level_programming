@@ -6,7 +6,7 @@
  * @n: - number of elts of the array
  * Return: Nothing
  */
-void reverse_array(char *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, j, tmp;
 

@@ -2,11 +2,11 @@
 
 /**
  * leet - do encoding
- * @c: - the char array
+ * @str: - the char array
  * Return: a pointer to the new char array
  */
 
-char *leet(char *c)
+char *leet(char *str)
 {
 	int count1, count2;
 	char c[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};

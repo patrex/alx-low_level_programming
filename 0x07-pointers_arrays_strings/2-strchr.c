@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _strchr - returns substring with char c
  * @s: - destination string
@@ -17,5 +17,9 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	}
-	return ('\0');
+
+	if (*(s + i) == c)
+		return (s + i);
+
+	return (NULL);
 }

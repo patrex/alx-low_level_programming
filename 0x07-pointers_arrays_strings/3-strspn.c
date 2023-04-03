@@ -3,7 +3,7 @@
 /**
  * _strspn - returns substring with char c
  * @s: - the substring
- * @accept: - the original string 
+ * @accept: - the original string
  * Return: the len
  */
 unsigned int _strspn(char *s, char *accept)

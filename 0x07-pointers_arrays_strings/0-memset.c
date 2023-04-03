@@ -7,7 +7,7 @@
  * @n: - the number of bytes to copy
  * Return: Pointer to s
  */
-char *_memcpy(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 

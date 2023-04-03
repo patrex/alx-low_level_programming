@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memcpy - fills the area s by b
+ * _memset - fills the area s by b
  * @s: - destination string
  * @b: - the constant char
  * @n: - the number of bytes to copy

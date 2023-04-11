@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, tmp, sum = 0;
-	int number_found  = 0, letter_found = 0;
+	char *endptr;
 
 	if (argc < 2)
 	{
@@ -18,26 +18,17 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		tmp = atoi(argv[i]);
-		if (tmp > 0 || *(argv[i]) == '0')
+		tmp = strtol(argv[i], &endptr, 10);
+		if (*endptr)
 		{
-			++number_found;
-			sum += tmp;
+			printf("Error\n");
+			return (1);
 		}
 		else
 		{
-			++letter_found;
-			break;
+			sum += tmp;
 		}
 	}
-	if (letter_found)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	if (number_found)
-	{
-		printf("%d\n", sum);
-	}
+	printf("%d\n", sum);
 	return (0);
 }

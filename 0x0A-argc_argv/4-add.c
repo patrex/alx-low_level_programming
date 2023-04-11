@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - program that prints the sum of nos passed at the command line
  * @argc: the number of arguments passed to the program
@@ -17,7 +16,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			tmp = atoi(argv[i]);
-			if (tmp > 0)
+			if (tmp > 0 || *(argv[i]) == '0')
 			{
 				++number_found;
 				sum += tmp;

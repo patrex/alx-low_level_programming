@@ -3,7 +3,7 @@
 /**
  * _strdup - returns ptr to a copied string
  * @str: the string
- * Return: NULL on str being null or insufficient mem, the ptr to the new string
+ * Return: NULL on str null or insufficient mem, the ptr to the new string
  */
 char *_strdup(char *str)
 {

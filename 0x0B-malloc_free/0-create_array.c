@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * create_array - creates an array of chars
  * @size: the number of bytes to request
@@ -8,7 +9,7 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	int i;
+	unsigned int i;
 	char *charray;
 
 	if (size == 0)

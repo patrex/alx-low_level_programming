@@ -12,6 +12,7 @@ int **alloc_grid(int width, int height)
 {
 	int row = 0, col;
 	int **grid;
+	int faultline;
 
 	if (width < 1 || height < 1)
 		return (NULL);
@@ -25,6 +26,9 @@ int **alloc_grid(int width, int height)
 		grid[row] = malloc(width * sizeof(int));
 		if (grid[row] == NULL)
 		{
+			faultline = row - 1;
+			for (; faultline >= 0; faultline--)
+				free(grid[faultline]);
 			free(grid);
 			return (NULL);
 		}

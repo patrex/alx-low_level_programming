@@ -4,7 +4,7 @@
 /**
  * free_grid - frees a previously alloc'd block of mem
  * @height: how may rows to free
- *
+ * @grid: the mem block
  * Return: nothing
  */
 void free_grid(int **grid, int height)

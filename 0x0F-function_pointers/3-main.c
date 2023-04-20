@@ -21,13 +21,12 @@ int main(int argc, char **argv)
 	}
 
 	num1 = atoi(argv[1]);
-	operator = argv[2][0];
 	num2 = atoi(argv[3]);
 
-	if ((operator == '/' || operator == '%') && num2 == 0)
+	if (argv[2][1])
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 	op = get_op_func(argv[2]);
 

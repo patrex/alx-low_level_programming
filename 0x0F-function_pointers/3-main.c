@@ -24,8 +24,6 @@ int main(int argc, char **argv)
 	operator = argv[2][0];
 	num2 = atoi(argv[3]);
 
-	printf("%c\n", operator);
-
 	if ((operator == '/' || operator == '%') && num2 == 0)
 	{
 		printf("Error\n");

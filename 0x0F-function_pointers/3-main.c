@@ -10,8 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int num1, num2;
-	char operator;
+	int num1, num2;	
 	int (*op)(int, int);
 
 	if (argc != 4)
